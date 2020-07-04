@@ -1,0 +1,79 @@
+.row {
+	max-width: $grid-width;
+	background-color: #eee;
+	margin: 0 auto;
+	margin-bottom: $gutter-vertical;
+
+	// becouse the last row doesnt need a margin below itself:
+	&:last-child {
+		margin-bottom: 0;
+	}
+
+	@include clearfix;
+
+	.col-1-of-2 {
+		width: calc((100% - #{$gutter-horizontal}) / 2);
+		background-color: orange;
+		float: left;
+
+		// becouse only the last child in a row shouldnt have a margin to its right side
+		&:not(:last-child) {
+			margin-right: $gutter-horizontal;
+		}
+	}
+
+	.col-1-of-3 {
+		width: calc((100% - (#{$gutter-horizontal} * 2)) / 3);
+		background-color: yellow;
+		float: left;
+
+		// becouse only the last child in a row shouldnt have a margin to its right side
+		&:not(:last-child) {
+			margin-right: $gutter-horizontal;
+		}
+	}
+
+	.col-2-of-3 {
+		width: calc(((100% - (#{$gutter-horizontal} / 2)) / 3) * 2);
+		background-color: yellow;
+		float: left;
+
+		// becouse only the last child in a row shouldnt have a margin to its right side
+		&:not(:last-child) {
+			margin-right: $gutter-horizontal;
+		}
+	}
+
+	.col-1-of-4 {
+		width: calc((100% - (#{$gutter-horizontal}) * 3) / 4);
+		background-color: yellowgreen;
+		float: left;
+
+		// becouse only the last child in a row shouldnt have a margin to its right side
+		&:not(:last-child) {
+			margin-right: $gutter-horizontal;
+		}
+	}
+
+	.col-2-of-4 {
+		width: calc(2 * ((100% - (#{$gutter-horizontal}) * 3) / 4) + #{$gutter-horizontal});
+		background-color: yellowgreen;
+		float: left;
+
+		// becouse only the last child in a row shouldnt have a margin to its right side
+		&:not(:last-child) {
+			margin-right: $gutter-horizontal;
+		}
+	}
+
+	.col-3-of-4 {
+		width: calc(3 * ((100% - (#{$gutter-horizontal}) * 3) / 4) + (#{$gutter-horizontal} * 2));
+		background-color: yellowgreen;
+		float: left;
+
+		// becouse only the last child in a row shouldnt have a margin to its right side
+		&:not(:last-child) {
+			margin-right: $gutter-horizontal;
+		}
+	}
+}

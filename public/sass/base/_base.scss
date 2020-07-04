@@ -1,0 +1,20 @@
+/* below is a so called reset (with *, to make all elements so, as I want them) */
+*,
+*::after,
+*::before {
+	margin: 0;
+	padding: 0;
+	box-sizing: inherit;
+}
+
+html {
+	font-size: 62.5%;
+	/* to make the page more responsive, also for users, who are resizing their fonts for readings issues
+    if here would be a [px] value, then the user could not resize this value.
+    But now it is 16px (the default value of the font, that html uses). I wanna have 10px but in %, so:
+    10/16 = 0,625 => 62.5% */
+}
+
+body {
+	box-sizing: border-box;
+}
