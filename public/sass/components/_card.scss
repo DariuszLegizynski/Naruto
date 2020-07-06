@@ -33,6 +33,20 @@
 					$color-secondary-dark
 				);
 			}
+			&-2 {
+				background-image: linear-gradient(
+					to right bottom,
+					$color-primary-light,
+					$color-primary-dark
+				);
+			}
+			&-3 {
+				background-image: linear-gradient(
+					to right bottom,
+					$color-terciary-light,
+					$color-terciary-dark
+				);
+			}
 		}
 	}
 	&:hover &__side--front {
@@ -69,16 +83,16 @@
 		&--2 {
 			background-image: linear-gradient(
 					to right bottom,
-					$color-secondary-light,
-					$color-secondary-dark
+					$color-primary-light,
+					$color-primary-dark
 				),
 				url(../img/nat-6.jpg);
 		}
 		&--3 {
 			background-image: linear-gradient(
 					to right bottom,
-					$color-secondary-light,
-					$color-secondary-dark
+					$color-terciary-light,
+					$color-terciary-dark
 				),
 				url(../img/nat-7.jpg);
 		}
@@ -107,6 +121,32 @@
 				),
 				rgba(
 					$color-secondary-dark,
+					.85
+				)
+			);
+		}
+		&--2 {
+			background-image: linear-gradient(
+				to right bottom,
+				rgba(
+					$color-primary-light,
+					.85
+				),
+				rgba(
+					$color-primary-dark,
+					.85
+				)
+			);
+		}
+		&--3 {
+			background-image: linear-gradient(
+				to right bottom,
+				rgba(
+					$color-terciary-light,
+					.85
+				),
+				rgba(
+					$color-terciary-dark,
 					.85
 				)
 			);
